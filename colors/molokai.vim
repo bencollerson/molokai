@@ -43,7 +43,7 @@ hi DiffDelete      guifg=#960050 guibg=#1E0010
 hi DiffText                      guibg=#4C4745 gui=italic,bold
 
 hi Directory       guifg=#A6E22E               gui=bold
-hi Error           guifg=#960050 guibg=#1E0010
+hi Error           guifg=#960050 guibg=#EE0010
 hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
 hi Exception       guifg=#A6E22E               gui=bold
 hi Float           guifg=#AE81FF
@@ -101,20 +101,22 @@ hi Type            guifg=#66D9EF               gui=none
 hi Underlined      guifg=#808080               gui=underline
 
 hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
-hi VisualNOS                     guibg=#403D3D
-hi Visual                        guibg=#403D3D
+"hi VisualNOS                     guibg=#403D3D
+"hi Visual                        guibg=#403D3D
+hi VisualNOS       guifg=#000000 guibg=#FFFFFF
+hi Visual          guifg=#000000 guibg=#FFFFFF
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 
 if s:molokai_original == 1
-   hi Normal          guifg=#F8F8F2 guibg=#272822
+   hi Normal          guifg=#F8F8F2 guibg=Black
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
    hi CursorColumn                  guibg=#3E3D32
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
    hi NonText         guifg=#BCBCBC guibg=#3B3A32
 else
-   hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
+   hi Normal          guifg=#F8F8F2 guibg=Black
    hi Comment         guifg=#465457
    hi CursorLine                    guibg=#293739
    hi CursorColumn                  guibg=#293739
@@ -150,7 +152,7 @@ if &t_Co > 255
    hi FoldColumn      ctermfg=67  ctermbg=16
    hi Folded          ctermfg=67  ctermbg=16
    hi Function        ctermfg=118
-   hi Identifier      ctermfg=208
+   hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
    hi IncSearch       ctermfg=193 ctermbg=16
 
@@ -197,12 +199,14 @@ if &t_Co > 255
    hi Underlined      ctermfg=244               cterm=underline
 
    hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
-   hi VisualNOS                   ctermbg=238
-   hi Visual                      ctermbg=235
+"   hi VisualNOS                   ctermbg=238
+"   hi Visual                      ctermbg=239
+   hi VisualNOS       ctermfg=0   ctermbg=7
+   hi Visual          ctermfg=0   ctermbg=7
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
-   hi Normal          ctermfg=252 ctermbg=233
+   hi Normal          ctermfg=252 ctermbg=0
    hi Comment         ctermfg=59
    hi CursorLine                  ctermbg=234   cterm=none
    hi CursorColumn                ctermbg=234
